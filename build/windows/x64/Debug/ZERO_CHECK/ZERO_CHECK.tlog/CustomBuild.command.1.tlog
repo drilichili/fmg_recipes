@@ -1,0 +1,10 @@
+^C:\USERS\DRILON\DESKTOP\PRIVAT\PROJECTS\FMG_RECIPES\BUILD\WINDOWS\CMAKEFILES\56790A3789622DCEF87C801A7DBC19BB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Drilon/Desktop/Privat/Projects/fmg_recipes/windows -BC:/Users/Drilon/Desktop/Privat/Projects/fmg_recipes/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Drilon/Desktop/Privat/Projects/fmg_recipes/build/windows/fmg_recipes.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
